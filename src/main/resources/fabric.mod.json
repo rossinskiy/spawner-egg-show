@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "spawnereggshow",
+	"version": "${version}",
+	"name": "Spawner Egg Show",
+	"description": "Client-side mod that gives spawner items a unique texture per mob, based on their lore.",
+	"authors": ["rossinskiy"],
+	"contact": {
+		"homepage": "https://github.com/rossinskiy/spawner-egg-show",
+		"sources": "https://github.com/rossinskiy/spawner-egg-show",
+		"issues": "https://github.com/rossinskiy/spawner-egg-show/issues"
+	},
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.spawnereggshow.SpawnerEggShowClient"
+		]
+	},
+	"mixins": [
+		"spawnereggshow.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
